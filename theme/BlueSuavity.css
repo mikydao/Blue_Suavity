@@ -1,0 +1,855 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			BlueSuavity
+	Based on style:		prosilver (the default phpBB 3.1.x style)
+	Original author:	 DaVidU  (Coloreatuforo.com)
+	Modified by:		micontre ( http://www.phpbb-es.com/ )
+    --------------------------------------------------------------
+*/
+
+/* common.css changes */
+html, body {
+	color: #333;
+	background-color: #093a7d;
+	background-image: url("./images/background.jpg");
+	background-position: top center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+    background-size: 100% auto;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+h2 {
+	color: #28313F;
+}
+
+h3 {
+	border-bottom-color: #CCCCCC;
+	color: #115098;
+}
+
+hr {
+	border-color: #FFFFFF;
+	border-top-color: #CCCCCC;
+}
+
+hr.dashed {
+	border-top-color: #CCCCCC;
+}
+
+body.simple {
+	min-height: 100%;
+	background-color: #FFF;
+	padding: 0 5px;
+}
+#search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link, .forobg a:link, .forobg a:visited {
+    color: #ffffff;
+}
+
+#wrap {
+   	padding-bottom: 10px;
+    max-width: 900px;
+   	margin: 0 auto;
+	background-color:#FFF;
+	border: 2px solid #1482c7;
+	color:#333;
+    border-radius: 0px;
+}
+#wrap-simple{
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.search-header {
+	box-shadow: 0 0 10px #505C65;
+}
+.inside {
+    padding: 17px 10px 10px;
+}
+
+.headerbar {
+	background-color: #7C8891;
+	background-image: url("./images/bg_header.gif");
+	color: #FFFFFF;
+}
+
+.wrap-headerbar {
+    background-image: url("./images/bg_headerbar.png");
+	background-color: transparent;
+    background-size: 100% 100%;
+	color: #FFFFFF;
+	height: 150px;
+	padding: 0 5px;
+    margin: -12px auto 7px;
+}
+
+#wrap-header {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.navbar {
+	background-color: #48b5fa;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #5CC3FF), color-stop(1, #0060BF));
+	background-image: -o-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -moz-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -webkit-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: linear-gradient(to bottom, #5CC3FF, #0060BF);
+	background-repeat:no-repeat;
+	min-height: 50px;
+	color:#0a3b93;
+    border-radius: 0px;
+}
+.navbar a:link	{
+	color: #FFF;
+}
+.navbar a:visited	{
+	color: #FFF;
+}
+.navbar a:hover	{
+	color: #91d5ff;
+}
+.navbar a:active	{
+	color: #FFF;
+}
+.forabg, .forumbg {
+	background-color: #00c5ff;
+	background-image: url("./images/bg_list.gif");
+    border-radius: 0 0 5px 5px;
+}
+.forobg {
+
+   	background-color: #FFF;background-image: url("{T_THEME_PATH}/images/bg_cat.png");
+	background-repeat:no-repeat;
+	padding-top: 3px;
+	padding-bottom: 0px;
+	min-height:22px;
+	height:22px;
+	color: #FFF;
+	font-weight: bold;
+	text-align:center;
+	font-size:1.3em;
+	font-weight:bold;
+	font-variant:small-caps;
+	text-shadow: 2px 2px 2px #0b2534;
+	background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #5CC3FF), color-stop(1, #0060BF));
+	background-image: -o-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -moz-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -webkit-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: linear-gradient(to bottom, #5CC3FF, #0060BF);
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #89c0e8;
+}
+
+ .rotulo {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 7px;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #7EDEFB), color-stop(1, #3F97DC));
+    background-image: -o-linear-gradient(top, #7EDEFB, #3F97DC);
+    background-image: -moz-linear-gradient(top, #7EDEFB, #3F97DC);
+    background-image: -webkit-linear-gradient(top, #7EDEFB, #3F97DC);
+    background-image: linear-gradient(to bottom, #7EDEFB, #3F97DC);
+    width: 300px;
+    margin: 0 auto;
+    border: inset 1px;
+
+}
+
+.bgpost1 {
+    background-image: url("./images/bgpost1.png");
+    background-repeat: repeat-x;
+    border: 1px solid #0099ff;
+    border-radius: 0px;
+    background: #d1e9fe; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d1e9fe 0%, #d1e9fe 90px, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1e9fe), color-stop(90px,#d1e9fe), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #d1e9fe 0%,#d1e9fe 90px,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #d1e9fe 0%,#d1e9fe 90px,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #d1e9fe 0%,#d1e9fe 90px,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #d1e9fe 0%,#d1e9fe 90px,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e9fe', endColorstr='#e9f2fa',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.bgpost2 {
+   background-image: url("./images/bgpost2.png");
+   background-repeat: repeat-x;
+   border: 1px solid #0099ff;
+   border-radius: 0px;
+   background: #e9f2fa; /* Old browsers */
+   background: -moz-linear-gradient(top,  #ffffff 0%, #d1e9fe 90px, #d1e9fe 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(90px,#d1e9fe), color-stop(100%,#d1e9fe)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top,  #ffffff 0%,#d1e9fe 90px,#d1e9fe 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top,  #ffffff 0%,#d1e9fe 90px,#d1e9fe 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(top,  #ffffff 0%,#d1e9fe 90px,#d1e9fe 100%); /* IE10+ */
+   background: linear-gradient(to bottom,  #ffffff 0%,#d1e9fe 90px,#d1e9fe 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1e9fe',GradientType=0 ); /* IE6-9 */
+
+}
+
+.panel {
+	background-color: #c2ddf5;
+	color: #224d90;
+    border-radius: 0px;
+}
+
+.post:target .content {
+	color: #000000;
+}
+
+.post:target h3 a {
+	color: #000000;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.copyright a {
+    color: #71d8f7 !important;
+    font-weight: bold;
+}
+
+p.author {
+  margin-bottom: 1.4em;
+}
+
+.error {
+    color: #bc2a4d;
+}
+.reported {
+    background-color: #f7ecef !important;
+}
+li.reported:hover {
+    background-color: #ecd5d8 !important;
+}
+.sticky, .announce {
+}
+div.rules {
+    background-color: #ecd5d8;
+    background-image: url("./styles/BlueSuavity/theme/images/stop.png");
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    color: #a42d2d;
+    font-size: 12px;
+    min-height: 50px;
+    padding-left: 58px;
+}
+p.rules {
+    background-color: #ecd5d8;
+    background-image: none;
+}
+a:link {
+    color: #0a3b93;
+}
+a:visited {
+    color: #0a3b93;
+}
+a:hover {
+    color: #c30;
+}
+a:active {
+    color: #0a3b93;
+}
+.dropdown .small-icon > a {
+    color: #000 !important;
+}
+#search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link, .forobg a:link {
+    color: #ffffff;
+}
+#search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited, .forobg a:visited {
+    color: #ffffff;
+}
+#search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover, .forobg a:hover {
+    color: #000;
+}
+#search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active, .forobg a:active {
+    color: #c8e6ff;
+}
+a.forumtitle {
+    color: #0a3b93;
+}
+a.forumtitle:hover {
+    color: #c30;
+}
+a.forumtitle:active {
+    color: #0a3b93;
+}
+a.topictitle {
+    color: #0a3b93;
+}
+a.topictitle:hover {
+    color: #c30;
+}
+a.topictitle:active {
+    color: #0a3b93;
+}
+
+.bg1	{ background-color: #ECF3F7; }
+.bg2	{ background-color: #ffe6c2;  }
+.bg3	{ background-color: #c2ddf5;
+	background-image: url("./images/bgpost3.png");
+	background-repeat:repeat-x;
+	border:1px solid #0099ff;
+}
+.stat-block {
+	background-color: #e9f2fa;
+	font-size:1em;
+	border: 1px solid #09F;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left: 70px;
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+}
+.stat-block h3 {
+	/* Sub-headers (also used as post headers, but defined later) */
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid #09F;
+	margin-bottom: 3px;
+	padding-bottom: 2px;
+	font-size: 1.05em;
+	color:#093b7e;
+	margin-top: 5px;
+}
+.ucprowbg {
+	background-color: #DCDEE2;
+}
+
+#cp-main .panel {
+    background-color: #e9f2fa;
+    border: 1px solid #0099ff;
+    border-radius: 0px;
+}
+
+.fieldsbg {
+	background-color: #E7E8EA;
+}
+
+
+/* content.css changes */
+li.row {
+	background-color: #E8ECEE;
+}
+
+li.row:hover {
+	background-color: #EBEFF1;
+}
+
+li.row.bg3 {
+	background-color: #F0F4F6;
+}
+
+li.row.bg3:hover {
+	background-color: #F4F8FA;
+}
+
+
+.no-avatar .avatar-container {
+    background: url("./images/no_avatar.gif") no-repeat scroll 50% 2px rgba(0, 0, 0, 0);background-size: cover;
+    height: 90px;
+    width: 90px;
+    margin: 15px;
+}
+
+/* imageset.css changes */
+.imageset.site_logo {
+	background-image: url("./images/site_logo.png");
+	padding-left: 600px;
+	padding-top: 130px;
+}
+
+/* CP tabbed menu
+----------------------------------------*/
+#tabs .tab > a {
+	background-color: #48b5fa;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #5CC3FF), color-stop(1, #0060BF));
+	background-image: -o-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -moz-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -webkit-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: linear-gradient(to bottom, #5CC3FF, #0060BF);
+    border-color: #ccc -moz-use-text-color -moz-use-text-color;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    color: #ffffff;
+}
+
+#tabs .tab > a:hover {
+	background: #EDEDED;
+	color: #000000;
+}
+
+#tabs .activetab > a,
+#tabs .activetab > a:hover {
+
+	border-color: #EEEEEE;
+	box-shadow: 0 1px 1px #F2F9FF inset;
+	color: #333333;
+	background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #F2F5F7), color-stop(1, #B5B6B7));
+	background-image: -o-linear-gradient(top, #F2F5F7, #B5B6B7);
+	background-image: -moz-linear-gradient(top, #F2F5F7, #B5B6B7);
+	background-image: -webkit-linear-gradient(top, #F2F5F7, #B5B6B7);
+	background-image: linear-gradient(to bottom, #F2F5F7, #B5B6B7)
+}
+
+#tabs .activetab > a:hover {
+	color: #000000;
+}
+#navigation a {
+
+    color: #ffffff;
+    background-image: -webkit-gradient(linear, left, right, color-stop(0, #2D99D4), color-stop(1, #F9F9F9));
+    background-image: -o-linear-gradient(left, #2D99D4, #F9F9F9);
+    background-image: -moz-linear-gradient(left, #2D99D4, #F9F9F9);
+    background-image: -webkit-linear-gradient(left, #2D99D4, #F9F9F9);
+    background-image: linear-gradient(to right, #2D99D4, #F9F9F9);
+    border: 1px solid #09f;
+}
+
+#navigation a:hover {
+
+    color: #333333;
+    background-image: -webkit-gradient(linear, left, right, color-stop(0, #A3A3A3), color-stop(1, #F9F9F9));
+    background-image: -o-linear-gradient(left, #A3A3A3, #F9F9F9);
+    background-image: -moz-linear-gradient(left, #A3A3A3, #F9F9F9);
+    background-image: -webkit-linear-gradient(left, #A3A3A3, #F9F9F9);
+    background-image: linear-gradient(to right, #A3A3A3, #F9F9F9);
+
+}
+/* Mini tabbed menu used in MCP
+----------------------------------------*/
+#minitabs .tab > a {
+	background-color: #E1EBF2;
+}
+
+#minitabs .activetab > a,
+#minitabs .activetab > a:hover {
+	background-color: #F9F9F9;
+	color: #333333;
+}
+
+/* Icon images
+---------------------------------------- */
+.icon-acp					{ background-image: url("./images/icon_acp.gif"); }
+.icon-bookmark				{ background-image: url("./images/icon_bookmark.gif"); }
+.icon-bump					{ background-image: url("./images/icon_bump.gif"); }
+.icon-contact				{ background-image: url("./images/icon_pm.gif"); }
+.icon-delete-cookies		{ background-image: url("./images/icon_delete_cookies.gif"); }
+.icon-download				{ background-image: url("./images/icon_download.gif"); }
+.icon-faq					{ background-image: url("./images/icon_faq.gif"); }
+.icon-home					{ background-image: url("./images/icon_home.gif"); }
+.icon-fresh					{ background-image: url("./images/icon_fresh.gif"); }
+.icon-logout				{ background-image: url("./images/icon_logout.gif"); }
+.icon-mark					{ background-image: url("./images/icon_mark.gif"); }
+.icon-mark-read > a			{ background-image: url("./images/icon_mark_read.gif"); }
+.icon-mcp					{ background-image: url("./images/icon_mcp.gif"); }
+.icon-members				{ background-image: url("./images/icon_members.gif"); }
+.icon-notification			{ background-image: url("./images/icon_notification.gif"); }
+.icon-pages					{ background-image: url("./images/icon_pages.gif"); }
+.icon-pm					{ background-image: url("./images/icon_pm.gif"); }
+.icon-print					{ background-image: url("./images/icon_print.gif"); }
+.icon-profile				{ background-image: url("./images/icon_profile.gif"); }
+.icon-register				{ background-image: url("./images/icon_register.gif"); }
+.icon-search, .responsive-search a	{ background-image: url("./images/icon_search.gif"); }
+.icon-search-active			{ background-image: url("./images/subforum_read.gif"); }
+.icon-search-advanced		{ background-image: url("./images/icon_search_adv.gif"); }
+.icon-search-new			{ background-image: url("./images/subforum_unread.gif"); }
+.icon-search-self			{ background-image: url("./images/icon_topic_latest.gif"); }
+.icon-search-unanswered		{ background-image: url("./images/icon_post_target.gif"); }
+.icon-search-unread			{ background-image: url("./images/subforum_unread.gif"); }
+.icon-sendemail				{ background-image: url("./images/icon_sendemail.gif"); }
+.icon-subscribe				{ background-image: url("./images/icon_subscribe.gif"); }
+.icon-team					{ background-image: url("./images/icon_team.gif"); }
+.icon-ucp					{ background-image: url("./images/icon_ucp.gif"); }
+.icon-unsubscribe			{ background-image: url("./images/icon_unsubscribe.gif"); }
+
+/* Profile & navigation icons */
+.contact-icon													{ background-image: url("./images/icons_contact.png"); }
+.icon-button:before, .dropdown-select:after						{ background-image: url("./images/icons_button.png"); }
+
+/* Forum icons & Topic icons */
+.global_read													{ background-image: url("./images/announce_read.png"); }
+.global_read_mine												{ background-image: url("./images/announce_read_mine.png"); }
+.global_read_locked												{ background-image: url("./images/announce_read_locked.png"); }
+.global_read_locked_mine										{ background-image: url("./images/announce_read_locked_mine.png"); }
+.global_unread													{ background-image: url("./images/announce_unread.png"); }
+.global_unread_mine												{ background-image: url("./images/announce_unread_mine.png"); }
+.global_unread_locked											{ background-image: url("./images/announce_unread_locked.png"); }
+.global_unread_locked_mine										{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.announce_read													{ background-image: url("./images/announce_read.png"); }
+.announce_read_mine												{ background-image: url("./images/announce_read_mine.png"); }
+.announce_read_locked											{ background-image: url("./images/announce_read_locked.png"); }
+.announce_read_locked_mine										{ background-image: url("./images/announce_read_locked_mine.png"); }
+.announce_unread												{ background-image: url("./images/announce_unread.png"); }
+.announce_unread_mine											{ background-image: url("./images/announce_unread_mine.png"); }
+.announce_unread_locked											{ background-image: url("./images/announce_unread_locked.png"); }
+.announce_unread_locked_mine									{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.forum_link														{ background-image: url("./images/forum_link.png"); }
+.forum_read														{ background-image: url("./images/forum_read.png"); }
+.forum_read_locked												{ background-image: url("./images/forum_read_locked.png"); }
+.forum_read_subforum											{ background-image: url("./images/forum_read_subforum.png"); }
+.forum_unread													{ background-image: url("./images/forum_unread.png"); }
+.forum_unread_locked											{ background-image: url("./images/forum_unread_locked.png"); }
+.forum_unread_subforum											{ background-image: url("./images/forum_unread_subforum.png"); }
+
+.sticky_read													{ background-image: url("./images/sticky_read.png"); }
+.sticky_read_mine												{ background-image: url("./images/sticky_read_mine.png"); }
+.sticky_read_locked												{ background-image: url("./images/sticky_read_locked.png"); }
+.sticky_read_locked_mine										{ background-image: url("./images/sticky_read_locked_mine.png"); }
+.sticky_unread													{ background-image: url("./images/sticky_unread.png"); }
+.sticky_unread_mine												{ background-image: url("./images/sticky_unread_mine.png"); }
+.sticky_unread_locked											{ background-image: url("./images/sticky_unread_locked.png"); }
+.sticky_unread_locked_mine										{ background-image: url("./images/sticky_unread_locked_mine.png"); }
+
+.topic_moved													{ background-image: url("./images/topic_moved.png"); }
+.topic_read														{ background-image: url("./images/topic_read.png"); }
+.topic_read_mine												{ background-image: url("./images/topic_read_mine.png"); }
+.topic_read_hot													{ background-image: url("./images/topic_read_hot.png"); }
+.topic_read_hot_mine											{ background-image: url("./images/topic_read_hot_mine.png"); }
+.topic_read_locked												{ background-image: url("./images/topic_read_locked.png"); }
+.topic_read_locked_mine											{ background-image: url("./images/topic_read_locked_mine.png"); }
+.topic_unread													{ background-image: url("./images/topic_unread.png"); }
+.topic_unread_mine												{ background-image: url("./images/topic_unread_mine.png"); }
+.topic_unread_hot												{ background-image: url("./images/topic_unread_hot.png"); }
+.topic_unread_hot_mine											{ background-image: url("./images/topic_unread_hot_mine.png"); }
+.topic_unread_locked											{ background-image: url("./images/topic_unread_locked.png"); }
+.topic_unread_locked_mine										{ background-image: url("./images/topic_unread_locked_mine.png"); }
+
+.pm_read														{ background-image: url("./images/topic_read.png"); }
+.pm_unread														{ background-image: url("./images/topic_unread.png"); }
+
+.online, .offline  {
+	background-image: none !important;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+/*
+.hidden {
+	background-image: url("./images/icons/icon_user_hidden.png");
+}
+*/
+.online .username-coloured:after,.online .left-box.details.profile-details span:after{
+   	color: #5CFF00;
+	content: url("./images/icons/icon_user_online_resp.png");
+	font-size: 1em;
+	font-weight: normal;
+	margin-left: 4px;
+	text-shadow: 0 0 3px #5DF644;
+    font-family: "Courier New", Courier, monospace;
+}
+.offline .username-coloured:after{
+   	color: #5CFF00;
+	content: url("./images/icons/icon_user_offline_resp.png");
+	font-size: 1em;
+	font-weight: normal;
+	margin-left: 4px;
+	text-shadow: 0 0 3px #5DF644;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* bbcode */
+blockquote {
+     background-color: #d9eef3;
+     background-image: url("./images/quote.png");
+     background-repeat: no-repeat;
+     border: 1px solid #6cafed;
+}
+
+.rtl blockquote {
+     background-image: url("./images/quote_rtl.gif");
+}
+
+blockquote blockquote {
+     background-color: #d3e6f7;
+}
+
+blockquote blockquote blockquote {
+     background-color: #dfe8f1;
+}
+
+blockquote cite {
+    color: #ffffff;
+    display: block;
+    font-family: "Lucida Console",Monaco,monospace;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 3px;
+    text-shadow: 2px 2px 2px #000000;
+    text-transform: uppercase;
+}
+
+.codebox {
+     background-color: #ffffff;
+
+     border-color: #3396d8;
+}
+
+.codebox p {
+    border-bottom-color: transparent;
+    background-image: -webkit-gradient(linear, left, right, color-stop(0, #F9F9F9), color-stop(1, #9AD2EA ));
+    background-image: -o-linear-gradient(left,  #F9F9F9, #9AD2EA);
+    background-image: -moz-linear-gradient(left,  #F9F9F9, #9AD2EA);
+    background-image: -webkit-linear-gradient(left,  #F9F9F9, #9AD2EA);
+    background-image: linear-gradient(to right,  #F9F9F9, #9AD2EA);
+    padding: 7px;
+}
+.codebox p:after{
+    content: "<php>";
+    float: right;
+    font-size: 15px;
+    position: relative;
+    right: 6px;
+    color: "ffffff";
+    text-shadow:2px 2px 2px #0000FF;
+     color: #ffffff;
+}
+
+#smiley-box img {
+    height: auto;
+    max-width: 30px;
+}
+
+.syntaxcomment {
+     color: #ff8000;
+}
+
+.syntaxdefault {
+     color: #0000bb;
+}
+
+.syntaxhtml {
+     color: #000000;
+}
+
+.syntaxkeyword {
+     color: #007700;
+}
+
+.syntaxstring {
+     color: #dd0000;
+}
+
+.attachbox {
+     background-color: #ffffff;
+     border-color: #c9d2d8;
+}
+
+.pm-message .attachbox {
+     background-color: #f2f3f3;
+}
+
+.attachbox dd {
+     border-top-color: #c9d2d8;
+}
+
+.attachbox p {
+     color: #666666;
+}
+
+.attachbox p.stats {
+     color: #666666;
+}
+
+.attach-image img {
+     border-color: #999999;
+}
+
+dl.file dd {
+     color: #666666;
+}
+
+dl.thumbnail img {
+     background-color: #ffffff;
+     border-color: #666666;
+}
+
+dl.thumbnail dd {
+     color: #666666;
+}
+
+dl.thumbnail dt a:hover {
+     background-color: #eeeeee;
+}
+
+dl.thumbnail dt a:hover img {
+     border-color: #368ad2;
+}
+
+
+/* polls */
+fieldset.polls dl {
+     border-top-color: #000000;
+     color: #666666;
+}
+
+fieldset.polls dl.voted {
+     color: #000000;
+}
+
+fieldset.polls dd div {
+     color: #ffffff;
+}
+
+.rtl .pollbar1, .rtl .pollbar2, .rtl .pollbar3, .rtl .pollbar4, .rtl .pollbar5 {
+     border-right-color: transparent;
+}
+
+.pollbar1 {
+     background-color: transparent;
+     background-image: url("./styles/BlueSuavity/theme/images/bg_poll1.gif");
+     background-repeat: repeat-x ! important;
+     border-left-color: #000000;
+     border-right-color: #000000;
+}
+
+.rtl .pollbar1 {
+     border-left-color: #000000;
+}
+
+.pollbar2 {
+     background-color: transparent;
+     background-image: url("./styles/BlueSuavity/theme/images/bg_poll2.gif");
+     background-repeat: repeat-x ! important;
+     border-left-color: #000000;
+     border-right-color: #000000;
+}
+
+.rtl .pollbar2 {
+     border-left-color: #000000;
+}
+
+.pollbar3 {
+     background-color: transparent;
+     background-image: url("./styles/BlueSuavity/theme/images/bg_poll3.gif");
+     background-repeat: repeat-x ! important;
+     border-left-color: #000000;
+     border-right-color: #000000;
+}
+
+.rtl .pollbar3 {
+     border-left-color: #000000;
+}
+
+.pollbar4 {
+     background-color: transparent;
+     background-image: url("./styles/BlueSuavity/theme/images/bg_poll4.gif");
+     background-repeat: repeat-x ! important;
+     border-left-color: #000000;
+     border-right-color: #000000;
+}
+
+.rtl .pollbar4 {
+     border-left-color: #000000;
+}
+
+.pollbar5 {
+     background-color: transparent;
+     background-image: url("./styles/BlueSuavity/theme/images/bg_poll5.gif");
+     background-repeat: repeat-x ! important;
+     border-left-color: #000000;
+     border-right-color: #000000;
+}
+
+.rtl .pollbar5 {
+     border-left-color: #000000;
+}
+
+.postprofile {
+     border-left-color: #b9deff;
+     color: #555555;
+}
+
+.rtl .postprofile {
+     border-left-color: transparent;
+     border-right-color: #ffffff;
+}
+
+.pm .postprofile {
+     border-left-color: #dddddd;
+}
+
+.rtl .pm .postprofile {
+     border-left-color: transparent;
+     border-right-color: #dddddd;
+}
+
+.postprofile strong {
+     color: #0a3b93;
+}
+
+.dropdown-extended .header, .dropdown-extended .footer > a {
+	background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #5CC3FF), color-stop(1, #0060BF));
+	background-image: -o-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -moz-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: -webkit-linear-gradient(top, #5CC3FF, #0060BF);
+	background-image: linear-gradient(to bottom, #5CC3FF, #0060BF);
+
+}
+
+.dropdown-extended .pointer-inner {
+    border-color: #51b7f8 transparent !important;
+}
+
+.dropdown .dropdown-contents {
+    background: #ebeff1 none repeat scroll 0 0;
+}
+
+.dropdown .pointer-inner {
+    border-color: #ebeff1 transparent;
+}
+
+/* responsive.css changes */
+@media only screen and (max-width: 920px), only screen and (max-device-width: 920px) {
+	html, body {
+		background-color: #FFF;
+	}
+
+	body {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	#wrap, #wrap-header {
+		width: auto;
+		padding: 0;
+		border-width: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 860px), only screen and (max-device-width: 860px) {
+	#wrap, #wrap-header {
+		width: auto;
+	}
+    .inside {
+    padding: 0;
+}
+.copyright{ background-color: #093a7d; }
+
+.imageset.site_logo {
+	background-image: url("./images/site_logo_small.png");
+	padding-left: 381px;
+	padding-top: 104px;
+}
+
+}
+dl.icon dt .list-inner {
+    padding-left: 50px;
+}
+

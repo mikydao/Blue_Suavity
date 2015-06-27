@@ -1,0 +1,9 @@
+/* Online image */
+.online { background-image: url("./icon_user_online.png"); }
+
+.imageset.icon_user_online {
+	background-image: url("./icon_user_online.png") ;
+    background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-top: 35px;
+}

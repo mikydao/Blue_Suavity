@@ -1,0 +1,11 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			imaginewal
+	Based on style:		prosilver (the default phpBB 3.1.x style)
+	Original author:	Tom Beddard ( http://www.subblue.com/ )
+	Modified by:		mikydado ( https://www.imaginewal.com/ )
+    --------------------------------------------------------------
+*/
+
+@import url("../../prosilver/theme/stylesheet.css");
+@import url("BlueSuavity.css");
