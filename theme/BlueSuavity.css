@@ -1,8 +1,8 @@
 /*  phpBB3 Style Sheet
     --------------------------------------------------------------
-	Style name:			BlueSuavity
+	Style name:		BlueSuavity
 	Based on style:		prosilver (the default phpBB 3.1.x style)
-	Original author:	 DaVidU  (Coloreatuforo.com)
+	Original author:	DaVidU  (Coloreatuforo.com)
 	Modified by:		micontre ( http://www.phpbb-es.com/ )
     --------------------------------------------------------------
 */
@@ -123,7 +123,7 @@ body.simple {
 }
 .forobg {
 
-   	background-color: #FFF;background-image: url("{T_THEME_PATH}/images/bg_cat.png");
+   	background-color: #FFF;background-image: url("./images/bg_cat.png");
 	background-repeat:no-repeat;
 	padding-top: 3px;
 	padding-bottom: 0px;
@@ -232,7 +232,7 @@ li.reported:hover {
 }
 div.rules {
     background-color: #ecd5d8;
-    background-image: url("./styles/BlueSuavity/theme/images/stop.png");
+    background-image: url("./images/stop.png");
     background-position: 5px 5px;
     background-repeat: no-repeat;
     color: #a42d2d;
@@ -363,7 +363,7 @@ li.row.bg3:hover {
 .imageset.site_logo {
 	background-image: url("./images/site_logo.png");
 	padding-left: 600px;
-	padding-top: 130px;
+	padding-top: 110px;
 }
 
 /* CP tabbed menu
@@ -609,14 +609,14 @@ blockquote cite {
     padding: 7px;
 }
 .codebox p:after{
-    content: "<php>";
+    content: "<HTML, etc.>";
     float: right;
     font-size: 15px;
     position: relative;
     right: 6px;
     color: "ffffff";
     text-shadow:2px 2px 2px #0000FF;
-     color: #ffffff;
+    color: #ffffff;
 }
 
 #smiley-box img {
@@ -711,7 +711,7 @@ fieldset.polls dd div {
 
 .pollbar1 {
      background-color: transparent;
-     background-image: url("./styles/BlueSuavity/theme/images/bg_poll1.gif");
+     background-image: url("./images/bg_poll1.gif");
      background-repeat: repeat-x ! important;
      border-left-color: #000000;
      border-right-color: #000000;
@@ -723,7 +723,7 @@ fieldset.polls dd div {
 
 .pollbar2 {
      background-color: transparent;
-     background-image: url("./styles/BlueSuavity/theme/images/bg_poll2.gif");
+     background-image: url("./images/bg_poll2.gif");
      background-repeat: repeat-x ! important;
      border-left-color: #000000;
      border-right-color: #000000;
@@ -735,7 +735,7 @@ fieldset.polls dd div {
 
 .pollbar3 {
      background-color: transparent;
-     background-image: url("./styles/BlueSuavity/theme/images/bg_poll3.gif");
+     background-image: url("./images/bg_poll3.gif");
      background-repeat: repeat-x ! important;
      border-left-color: #000000;
      border-right-color: #000000;
@@ -747,7 +747,7 @@ fieldset.polls dd div {
 
 .pollbar4 {
      background-color: transparent;
-     background-image: url("./styles/BlueSuavity/theme/images/bg_poll4.gif");
+     background-image: url("./images/bg_poll4.gif");
      background-repeat: repeat-x ! important;
      border-left-color: #000000;
      border-right-color: #000000;
@@ -759,7 +759,7 @@ fieldset.polls dd div {
 
 .pollbar5 {
      background-color: transparent;
-     background-image: url("./styles/BlueSuavity/theme/images/bg_poll5.gif");
+     background-image: url("./images/bg_poll5.gif");
      background-repeat: repeat-x ! important;
      border-left-color: #000000;
      border-right-color: #000000;
@@ -813,6 +813,11 @@ fieldset.polls dd div {
     border-color: #ebeff1 transparent;
 }
 
+li.row strong {
+	font-weight: bold;
+	color: inherit;
+}
+
 /* responsive.css changes */
 @media only screen and (max-width: 920px), only screen and (max-device-width: 920px) {
 	html, body {
@@ -849,7 +854,7 @@ fieldset.polls dd div {
 }
 
 }
+
 dl.icon dt .list-inner {
     padding-left: 50px;
 }
-
